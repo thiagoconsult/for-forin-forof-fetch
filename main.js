@@ -30,7 +30,12 @@ async function main() {
         }
         console.timeEnd('FOR OF')
         // FOR OF =====================================================================
-    
+        	
+        // MAP ========================================================================
+        console.time('MAP')
+        users.push(result.map((user, index) => `[${index}][${user.name}]`))
+        console.timeEnd('MAP')
+        // MAP ========================================================================
     
         console.log('USERS: ', users)
     }catch(error){
