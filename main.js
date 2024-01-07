@@ -26,7 +26,7 @@ async function main() {
         // FOR OF =====================================================================
         console.time('FOR OF')
         for(let user of result){
-            users.push(user.nameclear)
+            users.push(user.name)
         }
         console.timeEnd('FOR OF')
         // FOR OF =====================================================================
